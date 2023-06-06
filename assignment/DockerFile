@@ -1,0 +1,18 @@
+# Use a base image with Java 11 (you can change the version if needed)
+FROM adoptopenjdk:11-jre-hotspot
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the JAR file and application.properties to the container
+COPY target/assignment.jar assignment.jar
+COPY application.properties application.properties
+
+# Expose the port on which your application listens
+EXPOSE 8080
+
+# Set environment variables if necessary
+# ENV VARIABLE_NAME=value
+
+# Start the Spring Boot application
+CMD ["java", "-jar", "your-application.jar"]
