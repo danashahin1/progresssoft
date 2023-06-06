@@ -36,9 +36,10 @@ Makefile to streamline running application (plus).
 -test cases were written (for inserting valid/invalid rows)
 
 ---------------------------------------------Database scripts-------------------------------------------------
+
                                         --------Deals table-----------
 
-    CREATE TABLE `deals` (
+   CREATE TABLE `deals` (
   `ID` varchar(100) NOT NULL,
   `FROM_CURRENCY` varchar(45) DEFAULT NULL,
   `TO_CURRENCY` varchar(45) DEFAULT NULL,
